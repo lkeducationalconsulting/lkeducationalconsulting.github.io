@@ -1,0 +1,105 @@
+/*remember to use only the 1 column, no side bars - for mobile devices*/
+
+body {color:black; background-color: #F0FFF0; padding:20px; font-family:Arial, Verdana, Sans-serif; font-size: 10pt;}
+
+
+/* 80% of width of page, didn't include background image so didn't use .8 transparency between 0 and 1 to allow background image to show through */
+/* this wrapper includes the skinny border at bottom */
+/*this sets the page boundaries*/
+
+
+
+div#wrapper {margin: 0 auto; width: 80%; background-color: #FFFFFF; padding:30px; }
+
+#wrapper p {line-height:150%; margin-left:20px;}
+
+/* easier to read */
+/* if want a thin footer line, insert after padding, inside the }:     border-bottom:5px solid #A3CCA3; */
+
+#wrapper table.admits td {vertical-align:top; padding-right:20px;}
+
+#wrapper table.pictures { margin: auto; } 
+#wrapper table.pictures td {vertical-align:top;}
+
+
+/*the following div supports the facebook Like button below*/
+#fb-root {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}
+
+/*	following was to try to format Services list into two columns
+
+div#wrap {
+   width: 700%;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:30%;
+}
+#right_col {
+   float:right;
+   width:30%;
+}
+*/
+
+table.logins {
+  width: 100%; }
+  
+td.logins {
+text-align: center;
+width: 20%;
+}
+
+
+
+#wrapper h1 {color:black; font-family:Arial, Verdana, Sans-serif;} 
+#wrapper h2 {color:black; font-family:Arial, Verdana, Sans-serif;}
+#wrapper h3 {color:black; font-family:Arial, Verdana, Sans-serif;}
+#wrapper h4 {color:black; font-family:Arial, Verdana, Sans-serif;}
+#wrapper h5 {text-align:center; font-family:Cursive, fantasy; font-size:14pt; font-type:italic; color:#009933; line-height:6%;}
+/*lighter color had been #81A181 */
+
+
+/* alternate wrapper - wrapper2 includes the colored fatter border at bottom of div*/
+
+div#wrapper2 {margin: 0 auto; width: 80%; background-color: #FFFFFF; padding:30px; border-bottom:20px solid #B8E6B8;}
+#wrapper2 p {line-height:150%; }
+#wrapper2 h1, #wrapper2 h2, #wrapper2 h3 {font-family:Georgia, Sans-serif;}
+
+ul li {margin-bottom:1em;}
+
+
+/* tried using the following to keep nav bar from wrapping but it didn't work
+nav {text-align:center; background-color:#B8E6B8;}
+#wrapper nav p {padding:20px; color:white; line-height:1.5em;}
+/*this centers the footer text when it is defined as a paragraph*/
+
+nav {text-align:center; background-color:#B8E6B8; padding:15px; line-height:200%;}
+/*this is to style the nav bar, add the color:white here to make sure the vertical bar is also white;*/
+
+
+
+nav a {text-align:center; padding:10px 0; text-decoration:none;}
+/*this is to style the anchor tags within the nav bar, the a refers to anything within the anchor tag is white*/
+/*the padding is to give space around the anchor tags*/
+
+nav a.here  {color:black;}
+/*changing anchor tags inside the nav section, when on currently. the . refers to a class*/
+
+nav a:hover {color:blue; padding:10px; text-decoration:none; background-color:white;}
+/*changing anchor tags inside the nav section, when hover. the : refers to a pseudoclass*/
+
+
+
+footer {background-color:#B8E6B8;}
+#wrapper footer p {text-align:center; padding:15px; line-height:200%;}
+/*this centers the footer text when it is defined as a paragraph*/
+
+footer a.here  {color:black;}
+
+footer a:hover {color:blue; padding:10px; text-decoration:none; background-color:white;}
